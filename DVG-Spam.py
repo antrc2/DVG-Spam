@@ -68,7 +68,6 @@ print( 'Link: https://www.facebook.com/groups/776821276786175')
 print( ' ')
 print( " ")
 
-os.system('color A')
 sdt=input(str('\033[1;33mSo Dien Thoai: '))
 time_delay = random.randint(0,1)
 print('\033[1;97m===========================================================================')
